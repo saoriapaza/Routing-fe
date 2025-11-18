@@ -1,0 +1,44 @@
+/* Global Styles */
+:root {
+  --primary-color: #7B2CBF;
+  --primary-light: #9D4EDD;
+  --primary-dark: #5A189A;
+  --secondary-color: #C77DFF;
+  --accent-color: #E0AAFF;
+  --light-accent: #F8F0FF;
+  --dark-color: #10002B;
+  --light-color: #F8F9FA;
+  --transition: all 0.3s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--light-accent);
+  color: var(--dark-color);
+  line-height: 1.6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--primary-color), var(--primary-dark));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(var(--primary-dark), var(--primary-color));
+}
